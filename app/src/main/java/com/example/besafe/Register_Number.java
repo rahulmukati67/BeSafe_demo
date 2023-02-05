@@ -40,11 +40,6 @@ public class Register_Number extends AppCompatActivity {
 
 
 
-
-
-
-
-
         // *******************************  Function to Register Number Form the user ***************************************** //
 
         findViewById(R.id.add_number).setOnClickListener(new View.OnClickListener() {
