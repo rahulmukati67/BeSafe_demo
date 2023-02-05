@@ -1,4 +1,6 @@
 package com.example.besafe;
+import static android.content.Context.MODE_PRIVATE;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
@@ -6,6 +8,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -33,6 +36,7 @@ public class Register_Number extends AppCompatActivity {
         number = findViewById(R.id.number);
         emergency_msg = findViewById(R.id.emergency_msg);
          num = new String[3];
+        SharedPreferences contactNumber = getSharedPreferences("Emergency Contact" ,MODE_PRIVATE);
 
 
 

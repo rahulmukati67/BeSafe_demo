@@ -46,6 +46,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.android.gms:play-services-auth:20.3.0'
     implementation 'com.airbnb.android:lottie:5.2.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
 
 
 
