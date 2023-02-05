@@ -79,6 +79,7 @@ public class Register_Number extends AppCompatActivity {
               if ( i<3) {
                   Toast.makeText(Register_Number.this, "Please Register 3 Number First", Toast.LENGTH_SHORT).show();
               } else{
+                  PrefConfig.writelist( getApplicationContext(),num);
                   Intent intent = new Intent(Register_Number.this, User_Contact.class);
                   intent.putExtra("Contact", num);
                   startActivity(intent);
